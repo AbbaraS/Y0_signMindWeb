@@ -1,0 +1,362 @@
+body{
+    background-color: #bfe0c4;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* welcome page */
+#welcomeBody{
+    background-color: #866db1;
+    display: grid;
+
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". nav ." 
+    ". section ."
+    ". footer ." ;
+
+}
+.welcome{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: nav;
+}
+
+.welcomefoot{
+    grid-area: footer;
+}
+
+.welcometitle{
+    margin-right: auto;
+    margin-left: auto;
+    color: #71648e;
+    width: fit-content;
+    text-align: center;
+    font-size: 60pt;
+}
+
+.welcomepage{
+    color: black;
+
+    background-color: blueviolet;
+    font-size: 50pt;
+
+    border-style: solid;
+    border-color: darkmagenta;
+}
+
+/* create account & log in */
+
+#body_CA{
+    background-color: #866db1;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". section ." ;
+    
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+
+}
+
+.CAtitle{
+    margin-right: auto;
+    margin-left: auto;
+    color: #bfe0c4;
+    width: fit-content;
+    text-align: center;
+    font-size: 40pt;
+
+}
+
+/* --FORM-- */
+.form_label{
+    font-size: 30pt;
+    color: #8e765d;
+
+
+}
+
+.form_container{
+    width: 100%;
+    border-style: solid;
+    border-color: #8e765d;
+    background-color: #bfe0c4;
+    margin: auto;
+    margin-top: auto;
+}
+
+.form_input{
+    width: 95%;
+    padding:12px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.button{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-color: #8e765d;
+    background-color: #bfe0c4;
+    font-size: 30pt;
+}
+
+/*home page*/
+
+#homepage{
+    background-color: #bfe0c4;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". section ." 
+    ". footer ." ;
+
+}
+
+section{
+    grid-area: section;
+}
+
+.logo{
+    width: fit-content;
+    margin-top: 10px;
+    margin-right: auto;
+   margin-left: auto;
+    
+}
+
+/* social media links styling */
+.social-links{
+
+    width: fit-content;
+
+   margin-right: auto;
+   margin-left: auto;
+}
+/* navigation bar styling as flexbox*/
+.mainmenu{
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.navitem{
+
+    border-style: solid;
+    border-color: #8e765d;
+    background-color: #866db1;
+    font-size: 25pt;
+    color: black;
+    padding: 7px;
+}
+
+.whileOnNavItem{
+    border-style: solid;
+    border-color: #8e765d;
+    background-color: #bfe0c4;
+    font-size: 25pt;
+    color: black;
+    padding: 7px;
+
+}
+
+.titleinmiddle{
+    width: fit-content;
+    margin: 0% auto;
+    margin-top: 1em;
+    color: #8e765d;
+    text-decoration: underline;
+    font-size: 40pt;
+    width: fit-content;
+    text-align: center;
+}
+
+.boxwithimg{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img text"
+    "text text"
+    ;
+
+    border-style: solid;
+    border-color: #8e765d;
+    background-color: #866db1;
+    margin-top: 2em;
+}
+
+.imginbox{
+    width: 250px;
+    
+
+}
+
+.textinbox{
+    
+    font-size: 25pt;
+
+}
+
+.boxasimg{
+   padding: 1em;
+   margin-top: 2em;
+
+}
+
+footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerlogoimg1{
+    width: 200px;
+    height: 80px;
+    padding: 2em;
+}
+
+/*----HISTORY PAGE-----*/
+
+#history{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". section ." 
+    ". footer ." ;
+}
+
+.historysec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img1 text1"
+    "text2 img2";
+    margin-top: 2em;
+
+}
+
+.historyimg1{
+    grid-area: img1;
+    width: 100%;
+}
+
+.historytext1{
+    grid-area: text1;
+    font-size: 20pt;
+    padding-left: 1em;
+
+}
+.historyimg2{
+    grid-area: img2;
+    width: 100%;
+}
+
+.historytext2{
+    grid-area: text2;
+    font-size: 20pt;
+    padding-right: 1em;
+
+}
+
+/*----LETS LEARN----*/
+#letslearn{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". nav ."
+    ". section ." 
+    ". footer ." ;
+}
+
+.bslmenu{
+    grid-area: nav;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 2em;
+}
+
+.whileonbslnavitem{
+    border-style: solid;
+    border-color: #8e765d;
+    background-color: #bfe0c4;
+    font-size: 25pt;
+    color: black;
+    padding: 7px;
+}
+
+.bslnavitem{
+    border-style: none;
+    
+    background-color: #8e765d;
+    font-size: 25pt;
+    color: black;
+    padding: 7px;
+}
+
+.sidetitle{
+    width: fit-content;
+    color: #866db1;
+    text-decoration: none;
+    font-size: 25pt;
+    width: fit-content;
+
+}
+
+.vidsinbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.grammarbox{
+    border-style: solid;
+    border-color: #866db1;
+    background-color: #dbc0a3;
+}
